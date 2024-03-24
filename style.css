@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Miedinger-bold';
-    src: url(/fuentes/FontsFree-Net-Miedinger-W01-Bold.ttf);
+    src: url('./fuentes/FontsFree-Net-Miedinger-W01-Bold.ttf');
 }
 @font-face {
     font-family: 'Miedinger-regular';
-    src: url(/fuentes/Miedinger\ W01\ Regular.ttf);
+    src: url('./fuentes/Miedinger W01 Regular.ttf');
 }
 @font-face {
     font-family: 'Satoshi-medium';
-    src: url(/fuentes/Satoshi-Medium.otf);
+    src: url('./fuentes/Satoshi-Medium.otf');
 }
 
 
