@@ -1,36 +1,3 @@
-@font-face {
-    font-family: 'Miedinger-bold';
-    src: url('./fuentes/FontsFree-Net-Miedinger-W01-Bold.ttf');
-}
-@font-face {
-    font-family: 'Miedinger-regular';
-    src: url('./fuentes/Miedinger W01 Regular.ttf');
-}
-@font-face {
-    font-family: 'Satoshi-medium';
-    src: url('./fuentes/Satoshi-Medium.otf');
-}
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-:root{
-    --font-family-title: 'Miedinger-bold';
-    --font-family-subtitle: 'Miedinger-regular';
-    --font-family-texts:'Satoshi-medium';
-}
-
-body{
-    color: white;
-    overflow-x: hidden;
-    background-color: black;
-    font-family: var(--font-family-texts);
-}
 
 .fondo{
     width: 100%;
@@ -44,51 +11,7 @@ body{
 
 .fondo img{
     width: 100%;
-    
-}
-
-.header{
-    width: 100%;
-    position: fixed;
-}
-
-.nav{
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    padding: 60px 0px;
-    
-}
-
-.nav__name{
-    font-size: 40px;
-    font-family: "Miedinger-bold";
-}
-
-.nav__links{
-    display: flex;
-    gap: 20px;
-}
-
-.nav__links__item{
-    font-size: 16px;
-    list-style: none;
-}
-
-.nav__links__item a{
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 20px;
-    transition: background 1s, color .5s;
-}
-
-.nav__links__item a:hover{
-    background-color: white;
-    color: black;
+    animation: opacidad 2s;
 }
 
 .main{
@@ -113,16 +36,17 @@ body{
     position: absolute;
     transform: rotate(-3deg);
     left: 0px;
-    bottom: 60px;
+    bottom: 90px;
     padding: 8px 5px;
     background-color: white;
     display: flex;
+    color: black;
     gap: 100px;
 }
 
 .banda__categories{
     min-width: 1800px;
-    color: black;
+    
     display: flex;
     align-items: center;
     gap: 15px;
@@ -177,6 +101,7 @@ body{
 
 .description{
     width: 529px;
+    font-family: 'Satoshi-regular';
     font-size: 20px;
 }
 
