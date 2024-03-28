@@ -112,11 +112,13 @@
 .trayectory__items{
     display: flex;
     gap: 50px;
+    justify-content: space-between;
 }
 
 .experience{
     position: relative;
     min-width: 30%;
+    max-width: 30%;
     font-family: var(--font-family-light);
     font-size: 20px;
 }
@@ -146,13 +148,23 @@
 .experience__rol{
     font-size: 20px;
     font-family: var(--font-family-medium);
-    font-weight: 600;
+    font-weight: 400;
+    margin: 5px 0px;
 }
 
 
 .experience__date{
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.experience__functions{
+    
+}
+
+.experience__functions li{
+    margin-left: 13px;
+    list-style-image: url(./../images/Estrella\ blanco.svg);
 }
 
 
@@ -350,6 +362,8 @@
 
 .education__texts h4{
     font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 .education__texts p{
     font-size: 18px;
