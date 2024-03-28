@@ -282,7 +282,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 .education__icon h3{
     font-size: 20px;
@@ -295,6 +295,65 @@
     background-color: white;
     position: absolute;
     top: 120px;
+}
+
+.line.full{
+    width: 200%;
+}
+
+.section__education__content{
+    display: grid;
+    gap: 70px 20px ;
+    grid-template-areas: 
+    'zegel ipcna' 
+    'crehana crehana' 
+    'domestica domestica';
+    grid-template-columns: 1fr 1fr;
+}
+
+.education.zegel{
+    grid-area: zegel;
+}
+.education.ipcna{
+    grid-area: ipcna;
+}
+.education.crehana{
+    grid-area: crehana;
+}
+.education.domestica{
+    grid-area: domestica;
+}
+
+
+
+
+.education__content{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.education__texts{
+    position: relative;
+}
+
+.education__content .education__texts{
+    max-width: 350px;
+}
+
+.education__texts .star{
+    position: absolute;
+    top: -53px;
+    left: 60px;
+}
+
+.education__texts h4{
+    font-size: 18px;
+}
+.education__texts p{
+    font-size: 18px;
+    font-family: var(--font-family-light);
 }
 
 
