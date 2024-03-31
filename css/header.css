@@ -38,7 +38,7 @@
 body{
     color: white;
     overflow-x: hidden;
-    background-color: black;
+    background-color: #11152b;
     font-family: var(--font-family-medium);
 }
 
@@ -69,7 +69,7 @@ a{
 }
 
 .header__nav.active{
-    background-color: black;
+    background-color: #11152b;
 }
 
 .nav__name{
@@ -110,6 +110,22 @@ a{
     .nav{
         flex-direction: column;
         padding: 30px 0px;
+    }
+}
+@media only screen and (max-width:460px){
+    .nav{
+        width: 100%;
+        padding: 20px 0px;
+        gap: 10px;
+    }
+    .nav__name{
+        font-size: 30px;
+    }
+    .nav__links{
+        gap: 5px;
+    }
+    .nav__links__item{
+        font-size: 12px;
     }
 }
 
