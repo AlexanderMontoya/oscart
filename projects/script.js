@@ -37,3 +37,28 @@ function ponerHidden(number){
     })
 }
 
+/* 
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.project');
+    
+    window.addEventListener('scroll', function () {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                console.log("first")
+                current = section.getAttribute('id');
+            }
+        });
+
+        document.querySelectorAll('a').forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href').includes(current)) {
+                a.classList.add('active');
+            }
+        });
+    });
+}); 
+ */

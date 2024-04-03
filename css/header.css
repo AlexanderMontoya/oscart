@@ -35,6 +35,10 @@
     --font-family-light: 'Satoshi-light';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     color: white;
     overflow-x: hidden;

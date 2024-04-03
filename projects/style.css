@@ -1,13 +1,43 @@
-*{
+/* *{
     scrollbar-width: none;
+    
 }
 
 body{
     scrollbar-width: none;
-}
+} */
 
 .main{
     width: 100%;
+}
+
+.buttons{
+    position: fixed;
+    left: 43%;
+    bottom: 10px;
+}
+
+.buttons nav{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons nav .btn{
+    width: 40px;
+    height: 4px;
+    background-color: #53f6db;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #53f6db;
+    transition: transform .5s;
+}
+
+.buttons nav .btn:hover{
+    transform: scaleX(1.2);
 }
 
 .line{
@@ -37,6 +67,7 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 0px;
+    position: relative;
 }
 
 .project{
