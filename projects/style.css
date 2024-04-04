@@ -1,11 +1,11 @@
-/* *{
+*{
     scrollbar-width: none;
-    
+    scroll-behavior: smooth;
 }
 
 body{
     scrollbar-width: none;
-} */
+}
 
 .main{
     width: 100%;

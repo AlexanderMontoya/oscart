@@ -1,5 +1,6 @@
-let cont_scroll = 1;
-
+let cont_scroll = 0;
+let area = 'LUDIGO';
+const sections = document.querySelectorAll('.project');
 const projects = document.querySelectorAll('.project__content');
 const numbers = document.querySelectorAll('.number');
 
@@ -9,7 +10,13 @@ function triggerAnimation(entries){
         pro.classList.toggle('unset',entry.isIntersecting) 
         if(entry.isIntersecting){
             const dat =entry.target.querySelector('.item')
+            
             ponerHidden(dat.value)
+            window.scrollTo({
+                top:sections[dat.value].offsetTop,
+                behavior:'smooth'
+            })
+            console.log(sections[dat.value].offsetTop)
         }
 
     })
@@ -37,28 +44,42 @@ function ponerHidden(number){
     })
 }
 
-/* 
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.project');
     
     window.addEventListener('scroll', function () {
-        let current = '';
+        /* let current = '';
 
-        sections.forEach(section => {
+        const sectionTop = sections[cont_scroll + 1].offsetTop;
+        const sectionHeight = sections[0].clientHeight;
+        const tolerancia = (sectionHeight*20) / 100
+
+        if(this.pageYOffset >= tolerancia){
+            console.log("w")
+            window.scrollTo({
+                top:sectionTop,
+                behavior:'smooth'
+            })
+        }         */
+
+        /* sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                console.log("first")
-                current = section.getAttribute('id');
+            console.log(section.id + "\nsection top: "+sectionTop+", client height: "+sectionHeight)
+            console.log(pageYOffset >= 350)
+            if(sectionTop!= 0 && pageYOffset >= 350){
+                window.scrollTo({
+                    top:sectionTop,
+                    behavior:'smooth'
+                })
             }
-        });
+            
+        }); */
 
-        document.querySelectorAll('a').forEach(a => {
-            a.classList.remove('active');
-            if (a.getAttribute('href').includes(current)) {
-                a.classList.add('active');
-            }
-        });
+        
     });
 }); 
- */
+ 
